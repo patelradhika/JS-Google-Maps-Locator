@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Store Locator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/3b6efc1dc2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="container homepage">
+        <div class="title">STORE LOCATOR</div>
+        <div class="search">
+            <input type="text" id="zip-search" placeholder="Enter Zip" onkeyup="onEnter(event)">
+            <i class="fas fa-search fa-flip-horizontal" onclick="getStores()"></i>
+        </div>
+        <div class="stores-list-container">
+            <div class="stores-list">
+                <div class="intro">
+                    <span class="enter-zip">Enter zip code</span>
+                    <span class="find-stores">Find stores near you</span>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="js/app.js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF2QZTz7RKshyMXOrBmSEufoyiGCx97IQ&callback=initMap" async defer></script>
+</body>
+
+</html>
